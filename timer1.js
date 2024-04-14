@@ -7,8 +7,8 @@ if (args.length > 0) {
     if (arg > 0 && Number(arg)) {
       delay = arg * ms;
       setTimeout(() => {
-        process.stdout.write(`Alarm at: ${arg} seconds`);         //System Sound - Beep
-        process.stdout.write("\x07 .");         //System Sound - Beep
+        process.stdout.write(`Alarm at: ${arg} seconds`);
+        process.stdout.write("\x07 .");         //System Sound - Beep (process.stdout.write("\x07"));
       }, delay);
     
       setTimeout(() => {
